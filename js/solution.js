@@ -1208,6 +1208,9 @@ class App
     switch (data.event) {
       case 'pic':
         this.mask.loadMask(data.pic.mask)
+          .then(()=>{
+            
+          })
           .catch((event) => {
             console.log(event);
           });
